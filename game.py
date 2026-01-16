@@ -29,7 +29,9 @@ elif decision == "no":
     print(player_name + ", you decide to wait. Perhaps courage will find you later.")
 elif decision != "yes" and decision != "no":
     print("Confused, you stand still, unsure of what to do.")
+
     continue_decision = input("Do you want to take the path now? (yes or no): ").lower().strip()
+    
     if continue_decision == "yes":
         print(f"Brave choice, {player_name}! You step onto the path and venture forward.")
     elif continue_decision == "no":
