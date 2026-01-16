@@ -20,7 +20,7 @@ A faint path lies ahead, leading deeper into the unknown...
 print(starting_area)
 
 # Ask the player for their first decision
-decision = input("Do you wish to take the path? (yes or no): "). lower() .strip()
+decision = input("Do you wish to take the path? (yes or no): ").lower().strip()
 
 # Respond based on the player's decision
 if decision == "yes":
@@ -31,7 +31,7 @@ elif decision != "yes" and decision != "no":
     print("Confused, you stand still, unsure of what to do.")
 
     continue_decision = input("Do you want to take the path now? (yes or no): ").lower().strip()
-    
+
     if continue_decision == "yes":
         print(f"Brave choice, {player_name}! You step onto the path and venture forward.")
     elif continue_decision == "no":
